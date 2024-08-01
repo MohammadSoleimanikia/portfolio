@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // adding our own colors
-        primary: "#34353A3",
-        secondary: "#e2e2d5",
+        primary: "#34353A",
+        secondary: "#FFC86B",
       },
+      fontFamily:{
+        body:['Poppins']
+      }
     },
   },
   plugins: [],
