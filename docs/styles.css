@@ -565,38 +565,6 @@ video {
   height: 1.5rem;
 }
 
-.h-4{
-  height: 1rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-auto{
-  height: auto;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-2{
-  width: 0.5rem;
-}
-
-.w-4{
-  width: 1rem;
-}
-
-.w-40{
-  width: 10rem;
-}
-
-.w-14{
-  width: 3.5rem;
-}
-
 .w-16{
   width: 4rem;
 }
