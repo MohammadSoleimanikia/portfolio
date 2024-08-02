@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#34353A",
-        secondary: "#FFC86B",
+        secondaryYellow: "#FFC86B",
+        secondaryBlue: "#6BA2FF",
+        secondaryBlueLight: "#daf0ff",
+        
       },
       fontFamily:{
         body:['Poppins']

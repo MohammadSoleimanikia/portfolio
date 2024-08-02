@@ -7,16 +7,17 @@
     <title>Portfolio</title>
   </head>
   <body class="bg-primary font-body">
-    <nav class="flex justify-between">
-      <img class="w-16 " src="./img/Logo.png" alt="Logo" />
-      <a href="#">
-        <svg class="text-white"
+    <header class="flex justify-between p-5 relative  border-b-2 border-secondaryBlue">
+      <img class="w-16" src="./img/Logo.png" alt="Logo"/>
+      <a href="#" class="cursor-pointer">
+        <svg
+          id="burger"
+          class="w-10 text-white md:hidden size-6"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-6"
         >
           <path
             stroke-linecap="round"
@@ -25,6 +26,20 @@
           />
         </svg>
       </a>
-    </nav>
+      <nav
+        id="menu"
+        class="text-white text-xl font-medium h-screen md:hidden absolute top-0 -left-96  w-1/2 bg-primary bg-opacity-70 flex flex-col"
+      >
+        <a class="hover:text-secondaryBlue mt-4 ml-4" href="">About</a>
+        <a class="hover:text-secondaryBlue mt-4 ml-4" href="">Portfolio</a>
+        <a class="hover:text-secondaryBlue mt-4 ml-4" href="">Contact</a>
+      </nav>
+      <nav class="hidden md:flex md:w-1/2  lg:w-1/3 justify-between text-white "><!--nav on bigger screens-->
+        <a class="hover:text-secondaryBlue " href="">About</a>
+        <a class="hover:text-secondaryBlue " href="">Portfolio</a>
+        <a class="hover:text-secondaryBlue " href="">Contact</a>
+      </nav>
+    </header>
+    <script src="./index.js"></script>
   </body>
 </html>
