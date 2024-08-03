@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- titles :text-lg sm:text-xl md:text-3xl xl:text-6xl -->
+     <!-- texts: sm:text-lg md:text-xl xl:text-2xl   -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Portfolio</title>
   </head>
-  <body class="bg-primary font-body text-white">
-    <header class="flex justify-between p-5 relative  border-b-2 border-secondaryBlue">
-      <img class="w-12 md:w-20" src="./img/Logo.png" alt="Logo"/>
+  <body class="text-white bg-primary font-body">
+    <header
+      class="relative flex justify-between p-5 border-b-2 border-secondaryYellow"
+    >
+      <img class="w-12 md:w-20" src="./img/Logo.png" alt="Logo" />
       <a href="#" class="cursor-pointer">
         <svg
           id="burger"
@@ -29,27 +33,61 @@
       <!-- mobile nav -->
       <nav
         id="menu"
-        class="text-xl border-r-4 border-secondaryBlue font-medium h-screen md:hidden absolute top-0 -left-96  w-1/2 bg-primary bg-opacity-70 flex flex-col"
+        class="absolute top-0 flex flex-col w-1/2 h-screen text-xl font-medium border-r-4 border-secondaryYellow md:hidden -left-96 bg-primary bg-opacity-70"
       >
-        <a class="hover:text-secondaryBlue mt-4 ml-4" href="">About</a>
-        <a class="hover:text-secondaryBlue mt-4 ml-4" href="">Portfolio</a>
-        <a class="hover:text-secondaryBlue mt-4 ml-4" href="">Contact</a>
+        <a class="mt-4 ml-4 hover:text-secondaryYellow" href="">About</a>
+        <a class="mt-4 ml-4 hover:text-secondaryYellow" href="">Portfolio</a>
+        <a class="mt-4 ml-4 hover:text-secondaryYellow" href="">Contact</a>
       </nav>
       <!-- desktop nav -->
-      <nav class="hidden md:flex md:w-1/2  lg:w-1/3 justify-between text-xl"><!--nav on bigger screens-->
-        <a class="hover:text-secondaryBlue " href="">About</a>
-        <a class="hover:text-secondaryBlue " href="">Portfolio</a>
-        <a class="hover:text-secondaryBlue " href="">Contact</a>
+      <nav class="justify-between hidden text-xl md:flex md:w-1/2 lg:w-1/3">
+        <!--nav on bigger screens-->
+        <a class="hover:text-secondaryYellow" href="">About</a>
+        <a class="hover:text-secondaryYellow" href="">Portfolio</a>
+        <a class="hover:text-secondaryYellow" href="">Contact</a>
       </nav>
     </header>
     <main>
-      <div class=" flex justify-between items-end pt-5 md:pt-16 px-10"><!--hero section-->
+      <!-- hero section -->
+      <section class="flex items-end justify-between px-10 py-5 md:py-16">
         <div>
-          <p class="text-sm sm:text-lg md:text-3xl xl:text-6xl pt-24  ">I'M <span class="text-secondaryBlue">Mohammad Soleimanikia</span> <br/>Front end Developer</p>
-          <button class="md:text-xl xl:text-2xl xl:mt-12 mt-6 border-2 border-secondaryBlue rounded-lg p-1 text-secondaryBlue">Contact Me</button>
+          <h1 class="pt-24 text-sm sm:text-lg md:text-3xl xl:text-6xl">
+            I'M <span class="text-secondaryYellow">Mohammad Soleimanikia</span>
+            <br />Front end Developer
+          </h1>
+          <button
+            class="p-1 mt-6 border-2 rounded-lg md:text-xl xl:text-2xl xl:mt-12 border-secondaryYellow text-secondaryYellow"
+          >
+            Contact Me
+          </button>
         </div>
-        <img class=" w-1/2 sm:w-1/3 lg:w-1/4 object-contain  lg:mr-24" src="./img/hero.png" alt="hero section pic a man holding a laptop">
-      </div>
+        <img
+          class="object-contain w-1/2 sm:w-1/3 lg:w-1/4 lg:mr-24"
+          src="./img/hero.png"
+          alt="hero section pic a man holding a laptop"
+        />
+      </section>
+
+      <!-- about section -->
+      <section class="px-10 py-5 md:py-16 bg-primaryLight md:pt-16">
+        <h2 class="mb-5 text-lg font-semibold sm:text-xl md:text-3xl xl:text-6xl ">
+          About
+        </h2>
+        <div class="flex items-start">
+          <div class="w-16 h-1 mt-2 mr-2 bg-secondaryYellow"></div>
+          <p class="md:text-xl sm:text-lg xl:text-2xl">
+            I’m a front-end developer with over a year of experience and a
+            Master’s degree in Computer Science. My passion for design and
+            coding led me to this career, where I enjoy creating beautiful and
+            user-friendly websites.<br />
+            I’m a fast learner who loves to explore new technologies. I’ve
+            completed multiple courses and earned certifications to strengthen
+            my skills.<br />As I continue my journey in web development, I look
+            forward to taking on new challenges and staying updated with the
+            latest trends in the industry.
+          </p>
+        </div>
+      </section>
     </main>
     <script src="./index.js"></script>
   </body>

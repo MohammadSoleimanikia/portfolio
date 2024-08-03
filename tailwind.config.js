@@ -8,7 +8,6 @@ module.exports = {
         primaryLight: "#3D3E42",
         secondaryYellow: "#FFC86B",
         secondaryBlue: "#6BA2FF",
-        secondaryBlueLight: "#daf0ff",
         
       },
       fontFamily:{
