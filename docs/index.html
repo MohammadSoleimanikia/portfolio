@@ -12,7 +12,7 @@
     <header
       class="relative flex justify-between p-5 border-b-2 border-secondaryYellow"
     >
-      <img class="w-12 md:w-20" src="./img/Logo.png" alt="Logo" />
+      <img class="w-12 md:w-20 lg:w-28" src="./img/Logo.png" alt="Logo" />
       <a href="#" class="cursor-pointer">
         <svg
           id="burger"
@@ -31,20 +31,25 @@
         </svg>
       </a>
       <!-- mobile nav -->
-      <nav
-        id="menu"
-        class="absolute top-0 flex flex-col w-1/2 h-screen text-xl font-medium border-r-4 border-secondaryYellow md:hidden -left-96 bg-primary bg-opacity-70"
-      >
+      <nav id="menu" class="mobileNav -left-96 md:hidden">
         <a class="mt-4 ml-4 hover:text-secondaryYellow" href="">About</a>
         <a class="mt-4 ml-4 hover:text-secondaryYellow" href="">Portfolio</a>
         <a class="mt-4 ml-4 hover:text-secondaryYellow" href="">Contact</a>
       </nav>
       <!-- desktop nav -->
-      <nav class="justify-between hidden text-xl md:flex md:w-1/2 lg:w-1/3">
+      <nav
+        class="justify-between hidden text-xl md:flex md:w-1/2 lg:w-1/3 lg:text-3xl"
+      >
         <!--nav on bigger screens-->
-        <a class="hover:text-secondaryYellow" href="">About</a>
-        <a class="hover:text-secondaryYellow" href="">Portfolio</a>
-        <a class="hover:text-secondaryYellow" href="">Contact</a>
+        <a class="hover:text-secondaryYellow transition duration-300" href=""
+          >About</a
+        >
+        <a class="hover:text-secondaryYellow transition duration-300" href=""
+          >Portfolio</a
+        >
+        <a class="hover:text-secondaryYellow transition duration-300" href=""
+          >Contact</a
+        >
       </nav>
     </header>
     <main>
@@ -56,7 +61,7 @@
             <br />Front end Developer
           </h1>
           <button
-            class="p-1 mt-6 border-2 rounded-lg md:text-xl xl:text-2xl xl:mt-12 border-secondaryYellow text-secondaryYellow"
+            class="button mt-5 md:mt-10 lg:mt-16 text-sm sm:text-lg xl:text-4xl"
           >
             Contact Me
           </button>
@@ -73,7 +78,7 @@
         <h2 class="title">About</h2>
         <div class="flex items-start">
           <div class="w-16 h-1 mt-2 mr-2 bg-secondaryYellow"></div>
-          <p class="md:text-xl sm:text-lg xl:text-2xl">
+          <p class="paragraph">
             I’m a front-end developer with over a year of experience and a
             Master’s degree in Computer Science. My passion for design and
             coding led me to this career, where I enjoy creating beautiful and
@@ -91,42 +96,73 @@
       <section class="px-10 py-5 md:py-16">
         <h2 class="text-center title">MY skills</h2>
         <!-- items container -->
-        <div class="grid w-full place-items-center grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-16">
-          <div class="card">
+        <div
+          class="grid w-full place-items-center grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-16"
+        >
+          <div class="card cardHover">
             <img class="h-full" src="img/css.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full" src="img/HTML.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full" src="img/js.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full" src="img/react.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full object-contain" src="img/nodejs.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full object-contain" src="img/tailwind.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full" src="img/bootstrap.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full object-contain" src="img/express.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full object-contain" src="img/sql.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full object-contain" src="img/postgre.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full object-contain" src="img/git.png" alt="" />
           </div>
-          <div class="card">
+          <div class="card cardHover">
             <img class="h-full object-contain" src="img/jquery.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- certification section -->
+      <section class="px-10 py-5 md:py-16">
+        <div
+          class="w-10/12 lg:w-5/12 bg-primaryLighter rounded-lg overflow-hidden mx-auto cardHover md:leading-9 lg:leading-10 xl:leading-11 md:text-xl sm:text-lg xl:text-2xl"
+        >
+          <img
+            src="./img/certifications/intro.png"
+            alt="Certification Image"
+            class="w-full h-auto object-cover"
+          />
+          <div class="p-4">
+            <h2 class="font-semibold text-white">
+              Introduction to Front-End Development
+            </h2>
+            <p class="text-white mt-1">
+              Issued by: <span class="font-medium">Coursera</span>
+            </p>
+            <p class="text-white mt-1">
+              Date Obtained: <span class="font-medium">jan, 2023</span>
+            </p>
+            <a
+              class="button mt-5 w-full text-center block"
+              href="https://www.coursera.org/account/accomplishments/certificate/MLY28GW3HQ7D"
+              >View Certification</a
+            >
           </div>
         </div>
       </section>

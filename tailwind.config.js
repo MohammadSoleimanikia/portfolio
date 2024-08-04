@@ -3,6 +3,9 @@ module.exports = {
   content: ["./docs/*.{html,js}"],
   theme: {
     extend: {
+      lineHeight: {
+        '12': '4rem',
+      },
       colors: {
         primary: "#31333B",
         primaryLight: "#3D3E42",
