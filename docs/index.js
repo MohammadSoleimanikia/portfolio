@@ -10,4 +10,14 @@ burger.addEventListener('click',()=>{
         menu.classList.add('-left-96');
         menu.classList.remove('left-0');
     }
-})
+});
+
+const content=document.querySelector('.content');
+
+content.addEventListener('pointerenter',()=>{
+content.classList.add('showContent')
+});
+
+content.addEventListener('pointerleave',()=>{
+content.classList.remove('showContent')
+});
