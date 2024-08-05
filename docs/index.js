@@ -1,23 +1,33 @@
 const burger = document.querySelector('#burger');
-const menu=document.querySelector('#menu');
-const page=document.querySelector('#page');
-burger.addEventListener('click',()=>{
-    if (menu.classList.contains('-left-96')){
-        menu.classList.remove('-left-96');
-        menu.classList.add('left-0');        
-    }
-    else{
-        menu.classList.add('-left-96');
-        menu.classList.remove('left-0');
+const menu = document.querySelector('#menu');
+const page = document.querySelector('#page');
+
+burger.addEventListener('click', () => {
+    if (menu.classList.contains('mobileNavShow')) {
+        menu.classList.remove('mobileNavShow');       
+    } else {
+        menu.classList.add('mobileNavShow');
     }
 });
 
 const content=document.querySelector('.content');
 
-content.addEventListener('pointerenter',()=>{
-content.classList.add('showContent')
-});
+// Function to check if the device is mobile
 
-content.addEventListener('pointerleave',()=>{
-content.classList.remove('showContent')
-});
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+// only works on desktop with mouse hover
+if (!isMobile()) {
+    // For desktop users, show content on hover
+    content.addEventListener('pointerenter', () => {
+        content.classList.add('showContent');
+    });
+
+    content.addEventListener('pointerleave', () => {
+        content.classList.remove('showContent');
+    });
+} else {
+    // For mobile devices, always show content
+    content.classList.add('showContent');
+}

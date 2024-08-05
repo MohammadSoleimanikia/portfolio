@@ -594,12 +594,8 @@ video {
   position: relative;
 }
 
-.-left-96{
-  left: -24rem;
-}
-
-.left-0{
-  left: 0px;
+.m-10{
+  margin: 2.5rem;
 }
 
 .ml-4{
@@ -924,6 +920,7 @@ video {
 .mobileNav{
   position: absolute;
   top: 0px;
+  left: -24rem;
   display: flex;
   height: 100vh;
   width: 50%;
@@ -936,6 +933,13 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 500;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.mobileNavShow{
+  left: 0px;
 }
 
 .button{
@@ -1099,7 +1103,7 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 1000ms;
 }
 
 .portfolioTitle{
