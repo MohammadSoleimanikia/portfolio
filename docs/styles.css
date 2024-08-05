@@ -602,11 +602,6 @@ video {
   left: 0px;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .ml-4{
   margin-left: 1rem;
 }
@@ -672,10 +667,6 @@ video {
   width: 2.5rem;
 }
 
-.w-10\/12{
-  width: 83.333333%;
-}
-
 .w-12{
   width: 3rem;
 }
@@ -716,14 +707,6 @@ video {
   gap: 0.75rem;
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -741,11 +724,6 @@ video {
 .bg-primaryLight{
   --tw-bg-opacity: 1;
   background-color: rgb(61 62 66 / var(--tw-bg-opacity));
-}
-
-.bg-primaryLighter{
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 101 114 / var(--tw-bg-opacity));
 }
 
 .bg-secondaryYellow{
@@ -866,13 +844,14 @@ video {
 
 @media (min-width: 1024px){
   .card{
-    height: 18rem;
-    width: 18rem;
+    height: 16rem;
+    width: 16rem;
   }
 }
 
 @media (min-width: 1280px){
   .card{
+    height: 20rem;
     width: 20rem;
   }
 }
@@ -1015,6 +994,60 @@ video {
   }
 }
 
+.certificationCard{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+  width: 83.333333%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 101 114 / var(--tw-bg-opacity));
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.certificationCard:hover{
+  --tw-shadow-color: #7A7E82;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+@media (min-width: 640px){
+  .certificationCard{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px){
+  .certificationCard{
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .certificationCard{
+    margin-bottom: 5rem;
+    width: 41.666667%;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .certificationCard{
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+
 .hover\:text-secondaryYellow:hover{
   --tw-text-opacity: 1;
   color: rgb(255 200 107 / var(--tw-text-opacity));
@@ -1075,10 +1108,6 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .md\:leading-9{
-    line-height: 2.25rem;
-  }
 }
 
 @media (min-width: 1024px){
@@ -1102,10 +1131,6 @@ video {
     width: 7rem;
   }
 
-  .lg\:w-5\/12{
-    width: 41.666667%;
-  }
-
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1117,10 +1142,6 @@ video {
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .lg\:leading-10{
-    line-height: 2.5rem;
   }
 }
 

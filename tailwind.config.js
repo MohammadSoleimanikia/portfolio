@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       lineHeight: {
+        '11': '3rem',
         '12': '4rem',
       },
       colors: {
