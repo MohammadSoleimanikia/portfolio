@@ -10,24 +10,27 @@ burger.addEventListener('click', () => {
     }
 });
 
-const content=document.querySelector('.content');
+const contents = document.querySelectorAll('.content');
 
 // Function to check if the device is mobile
 
 function isMobile() {
     return /Mobi|Android/i.test(navigator.userAgent);
 }
-// only works on desktop with mouse hover
-if (!isMobile()) {
-    // For desktop users, show content on hover
-    content.addEventListener('pointerenter', () => {
-        content.classList.add('showContent');
-    });
+// Loop through all elements with the class "content"
+contents.forEach(content => {
+    // only works on desktop with mouse hover
+    if (!isMobile()) {
+        // For desktop users, show content on hover
+        content.addEventListener('pointerenter', () => {
+            content.classList.add('showContent');
+        });
 
-    content.addEventListener('pointerleave', () => {
-        content.classList.remove('showContent');
-    });
-} else {
-    // For mobile devices, always show content
-    content.classList.add('showContent');
-}
+        content.addEventListener('pointerleave', () => {
+            content.classList.remove('showContent');
+        });
+    } else {
+        // For mobile devices, always show content
+        content.classList.add('showContent');
+    }
+});
