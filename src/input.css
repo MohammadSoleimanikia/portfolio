@@ -24,7 +24,7 @@
   @apply md:leading-10 lg:leading-12 xl:leading-12 md:text-xl sm:text-lg xl:text-2xl;
 }
 .certificationCard {
-  @apply mb-5 md:mb-10 lg:mb-20 w-10/12 lg:w-8/12 bg-primaryLighter rounded-lg overflow-hidden mx-auto  md:leading-9 lg:leading-10 xl:leading-11 cardHover  md:text-xl sm:text-lg xl:text-2xl;
+  @apply flex flex-col justify-between mb-5 md:mb-10 lg:mb-20 w-10/12 lg:w-8/12 bg-primaryLighter rounded-lg overflow-hidden mx-auto  md:leading-9 lg:leading-10 xl:leading-11 cardHover  md:text-xl sm:text-lg xl:text-2xl;
 }
 .portfolioCard {
   @apply w-11/12  lg:w-11/12  h-auto relative mx-auto border-4 border-black;
