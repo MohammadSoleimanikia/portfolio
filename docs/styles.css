@@ -594,8 +594,9 @@ video {
   position: relative;
 }
 
-.m-10{
-  margin: 2.5rem;
+.mx-14{
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
 .ml-4{
@@ -722,16 +723,28 @@ video {
   justify-content: space-between;
 }
 
-.justify-around{
-  justify-content: space-around;
-}
-
 .gap-3{
   gap: 0.75rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
+.rounded-bl-lg{
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-br-lg{
+  border-bottom-right-radius: 0.5rem;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-r-0{
+  border-right-width: 0px;
 }
 
 .border-secondaryYellow{
@@ -1330,6 +1343,117 @@ video {
   }
 }
 
+.projectCard{
+  display: flex;
+  height: 400px;
+  width: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 40 46 / var(--tw-bg-opacity));
+}
+
+.cardContent{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.cardImage{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.cardTitle{
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.cardDescription{
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.badge{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  display: inline-block;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.beginner{
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
+.advance{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.intermediate{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
+
+.react{
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.html{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
+.css{
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.tailwind{
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.buttonContainer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.cardButton{
+  display: inline-block;
+  width: 50%;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 200 107 / var(--tw-border-opacity));
+  text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.cardButton:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 200 107 / var(--tw-bg-opacity));
+}
+
 .hover\:text-secondaryYellow:hover{
   --tw-text-opacity: 1;
   color: rgb(255 200 107 / var(--tw-text-opacity));
@@ -1376,6 +1500,10 @@ video {
     width: 5rem;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:py-16{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -1415,6 +1543,10 @@ video {
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4{

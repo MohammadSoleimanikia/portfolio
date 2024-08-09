@@ -304,143 +304,177 @@
       <section class="bg-primaryLighter py-5 md:py-16">
         <h2 id="portfolio" class="title text-center">Portfolio</h2>
         <!-- card Container -->
-        <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center lg:grid-cols-3 mx-14"
+        >
           <!-- To do app -->
-          <div class="portfolioCard m-10">
-            <img
-              class="object-cover"
-              src="./img/projects/To do app.png"
-              alt="todo app screenshot"
-            />
-            <div class="content">
-              <p class="portfolioTitle">To Do app</p>
-              <p class="portfolioDescription">
+          <div class="projectCard">
+            <img class="cardImage" src="./img/projects/To do app.png" alt="" />
+            <div class="cardContent">
+              <h2 class="cardTitle">To Do app</h2>
+              <p class="cardDescription">
                 To Do app build with REACT.js .It allows users to easily add and
                 remove tasks.Users can view tasks in three categories:
                 Completed, All, and Not Completed.
               </p>
-              <div class="w-full flex justify-around">
-                <a
-                  class="prtfolioButton"
-                  target="_blank"
-                  href="https://github.com/MohammadSoleimanikia/to-do-app"
-                  >Codes</a
-                >
-                <a
-                  class="prtfolioButton"
-                  target="_blank"
-                  href="https://to-do-app-omega-ten.vercel.app/"
-                  >Live preview</a
-                >
+              <div>
+                <p class="badge advance">advance</p>
+                <br />
+                <p class="badge react">REACT</p>
+                <p class="badge html">HTML</p>
+                <p class="badge css">CSS</p>
               </div>
             </div>
+            <div class="buttonContainer">
+              <a
+                class="cardButton border-r-0 rounded-bl-lg"
+                target="_blank"
+                href="https://github.com/MohammadSoleimanikia/to-do-app"
+                >codes</a
+              >
+              <a
+                class="cardButton border-r-0 rounded-br-lg"
+                target="_blank"
+                href="https://to-do-app-omega-ten.vercel.app/"
+                >live preview</a
+              >
+            </div>
           </div>
-
           <!-- weather app -->
-          <div class="portfolioCard m-10">
+          <div class="projectCard">
             <img
-              class="object-cover"
+              class="cardImage"
               src="./img/projects/weather app.png"
-              alt="weather app screenshot"
+              alt="weather app project screen shot"
             />
-            <div class="content">
-              <p class="portfolioTitle">Weather app</p>
-              <p class="portfolioDescription">
+            <div class="cardContent">
+              <h2 class="cardTitle">Weather app</h2>
+              <p class="cardDescription">
                 weather app that use API to fetch weekly weather of a city.
               </p>
-              <div class="w-full flex justify-around">
-                <a
-                  class="prtfolioButton"
-                  target="_blank"
-                  href="https://github.com/MohammadSoleimanikia/weather-app"
-                  >Codes</a
-                >
-                <a
-                  class="prtfolioButton"
-                  target="_blank"
-                  href="https://weather-app-pearl-six-75.vercel.app/"
-                  >Live preview</a
-                >
+              <div>
+                <p class="badge advance">advance</p>
+                <br />
+                <p class="badge react">REACT</p>
+                <p class="badge html">HTML</p>
+                <p class="badge css">CSS</p>
               </div>
             </div>
+            <div class="buttonContainer">
+              <a
+                class="cardButton border-r-0 rounded-bl-lg"
+                target="_blank"
+                href="https://github.com/MohammadSoleimanikia/weather-app"
+                >codes</a
+              >
+              <a
+                class="cardButton border-r-0 rounded-br-lg"
+                target="_blank"
+                href="https://weather-app-pearl-six-75.vercel.app/"
+                >live preview</a
+              >
+            </div>
           </div>
-
           <!-- food blog -->
-          <div class="portfolioCard m-10">
+          <div class="projectCard">
             <img
-              class="object-cover"
+              class="cardImage"
               src="./img/projects/food blog.png"
-              alt="food blog screenshot"
+              alt="food blog project screen shot"
             />
-            <div class="content">
-              <p class="portfolioTitle">Food blog template</p>
-              <p class="portfolioDescription">
+            <div class="cardContent">
+              <h2 class="cardTitle">Food Blog Template</h2>
+              <p class="cardDescription">
                 a responsive food blog template made with tailwind
               </p>
-              <div class="w-full flex justify-around">
-                <a
-                  class="prtfolioButton"
-                  href="https://github.com/MohammadSoleimanikia/Codes/tree/master/TailWind/project"
-                  >Codes</a
-                >
+              <div>
+                <p class="badge beginner">Beginner</p>
+                <br />
+                <p class="badge tailwind">Tailwind</p>
+                <p class="badge html">HTML</p>
+                <p class="badge css">CSS</p>
               </div>
+            </div>
+            <div class="buttonContainer">
+              <a
+                class="cardButton border-r-0 rounded-bl-lg"
+                target="_blank"
+                href="https://github.com/MohammadSoleimanikia/Codes/tree/master/TailWind/project"
+                >codes</a
+              >
+              <a
+                class="cardButton border-r-0 rounded-br-lg"
+                target="_blank"
+                href="#"
+                >live preview</a
+              >
             </div>
           </div>
           <!-- price card -->
-          <div class="portfolioCard m-10">
+          <div class="projectCard">
             <img
-              class="object-cover"
+              class="cardImage"
               src="./img/projects/priceCard.png"
-              alt="price card screenshot"
+              alt="price cards project screen shot"
             />
-            <div class="content">
-              <p class="portfolioTitle">Price card template</p>
-              <p class="portfolioDescription">
+            <div class="cardContent">
+              <h2 class="cardTitle">Food Blog Template</h2>
+              <p class="cardDescription">
                 responsive price card using flex box
               </p>
-              <div class="w-full flex justify-around">
-                <a
-                  class="prtfolioButton"
-                  target="_blank"
-                  href="https://github.com/MohammadSoleimanikia/price-cards"
-                  >Codes</a
-                >
-                <a
-                  class="prtfolioButton"
-                  target="_blank"
-                  href="https://mohammadsoleimanikia.github.io/price-cards/"
-                  >Live preview</a
-                >
+              <div>
+                <p class="badge beginner">Beginner</p>
+                <br />
+                <p class="badge html">HTML</p>
+                <p class="badge css">CSS</p>
               </div>
             </div>
+            <div class="buttonContainer">
+              <a
+                class="cardButton border-r-0 rounded-bl-lg"
+                target="_blank"
+                href="https://github.com/MohammadSoleimanikia/price-cards"
+                >codes</a
+              >
+              <a
+                class="cardButton border-r-0 rounded-br-lg"
+                target="_blank"
+                href="https://mohammadsoleimanikia.github.io/price-cards/"
+                >live preview</a
+              >
+            </div>
           </div>
-
           <!-- social links profile -->
-          <div class="portfolioCard m-10">
+          <div class="projectCard">
             <img
-              class="object-cover"
+              class="cardImage"
               src="./img/projects/social-links.png"
-              alt="social links profile screenshot"
+              alt="social links profile project screen shot"
             />
-            <div class="content">
-              <p class="portfolioTitle">Social Links Profile</p>
-              <p class="portfolioDescription">
-                responsive social links profile 
-              </p>
-              <div class="w-full flex justify-around">
-                <a
-                  class="prtfolioButton"
-                  target="_blank"
-                  href="https://github.com/MohammadSoleimanikia/social-links-profile"
-                  >Codes</a
-                >
-                <a
-                  class="prtfolioButton"
-                  target="_blank"
-                  href="https://mohammadsoleimanikia.github.io/social-links-profile/"
-                  >Live preview</a
-                >
+            <div class="cardContent">
+              <h2 class="cardTitle">Social Links profile</h2>
+              <p class="cardDescription">responsive social links profile</p>
+              <div>
+                <p class="badge beginner">Beginner</p>
+                <br />
+                <p class="badge tailwind">Tailwind</p>
+                <p class="badge html">HTML</p>
+                <p class="badge css">CSS</p>
               </div>
+            </div>
+            <div class="buttonContainer">
+              <a
+                class="cardButton border-r-0 rounded-bl-lg"
+                target="_blank"
+                href="https://github.com/MohammadSoleimanikia/social-links-profile"
+                >codes</a
+              >
+              <a
+                class="cardButton border-r-0 rounded-br-lg"
+                target="_blank"
+                href="https://mohammadsoleimanikia.github.io/social-links-profile/"
+                >live preview</a
+              >
             </div>
           </div>
           <!-- end of container -->

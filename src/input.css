@@ -56,3 +56,50 @@
 .socialItem{
   @apply size-5 ml-2 md:ml-5 md:size-10   lg:size-14
 }
+
+.projectCard{
+  @apply w-[300px] h-[400px]  bg-[#28282E] rounded-lg  flex flex-col justify-between
+}
+.cardContent{
+  @apply p-2 h-[100%] flex flex-col justify-between ;
+}
+.cardImage{
+  @apply rounded-t-lg
+}
+.cardTitle{
+  @apply text-xl text-center font-semibold
+}
+.cardDescription{
+  @apply text-base text-center
+}
+.badge{
+  @apply inline-block rounded-xl p-1 text-xs my-1 mx-0.5 text-black;
+}
+.beginner{
+  @apply bg-green-200;
+}
+.advance{
+  @apply bg-red-300;
+}
+.intermediate{
+  @apply bg-yellow-200;
+}
+
+.react{
+  @apply bg-blue-400; 
+}
+.html{
+  @apply bg-orange-300; 
+}
+.css{
+  @apply bg-blue-200; 
+}
+.tailwind{
+  @apply bg-blue-300; 
+}
+.buttonContainer{
+  @apply w-full flex justify-between border-t-2 border-black;
+}
+.cardButton{
+  @apply   border-[#FFC86B] hover:bg-[#FFC86B] inline-block w-6/12 text-center transition-all duration-500;
+}
