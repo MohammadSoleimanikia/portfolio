@@ -58,7 +58,7 @@
 }
 
 .projectCard{
-  @apply w-[300px] h-[400px]  bg-[#28282E] rounded-lg  flex flex-col justify-between
+  @apply w-[300px] h-[400px]  bg-[#31333B] rounded-lg  flex flex-col justify-between
 }
 .cardContent{
   @apply p-2 h-[100%] flex flex-col justify-between ;

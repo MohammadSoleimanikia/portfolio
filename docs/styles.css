@@ -1351,7 +1351,7 @@ video {
   justify-content: space-between;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(40 40 46 / var(--tw-bg-opacity));
+  background-color: rgb(49 51 59 / var(--tw-bg-opacity));
 }
 
 .cardContent{
