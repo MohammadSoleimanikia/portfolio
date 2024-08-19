@@ -1429,6 +1429,11 @@ video {
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
+.JS{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 196 39 / var(--tw-bg-opacity));
+}
+
 .buttonContainer{
   display: flex;
   width: 100%;

@@ -97,6 +97,9 @@
 .tailwind{
   @apply bg-blue-300; 
 }
+.JS{
+  @apply bg-[#F7C427]; 
+}
 .buttonContainer{
   @apply w-full flex justify-between border-t-2 border-black;
 }
