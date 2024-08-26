@@ -1434,6 +1434,11 @@ video {
   background-color: rgb(247 196 39 / var(--tw-bg-opacity));
 }
 
+.API{
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 193 138 / var(--tw-bg-opacity));
+}
+
 .buttonContainer{
   display: flex;
   width: 100%;
