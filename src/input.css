@@ -100,6 +100,9 @@
 .JS{
   @apply bg-[#F7C427]; 
 }
+.API{
+  @apply bg-[#08C18A]; 
+}
 .buttonContainer{
   @apply w-full flex justify-between border-t-2 border-black;
 }
